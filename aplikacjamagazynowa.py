@@ -1,6 +1,6 @@
 import streamlit as st
-from supabase import create_client, Client
 import pandas as pd
+from supabase import create_client
 
 # --- KONFIGURACJA POŁĄCZENIA ---
 @st.cache_resource
