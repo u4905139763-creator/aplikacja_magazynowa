@@ -60,7 +60,7 @@ with tab1:
                     payload = {
                         "nazwa": p_nazwa, 
                         "liczba": p_liczba, 
-                        "cena": p_cena, 
+                        "Cena": p_cena, 
                         "kategoria_id": p_kat
                     }
                     supabase.table("produkty").insert(payload).execute()
