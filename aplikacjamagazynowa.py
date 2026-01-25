@@ -70,7 +70,7 @@ with tab1:
             st.error("Brak kategorii w bazie!")
 
     # Wyświetlanie produktów
-    res_p = supabase.table("produkty").select("id, nazwa, liczba, cena, Kategorie(nazwa)").execute()
+    res_p = supabase.table("produkty").select("id, nazwa, liczba, Cena, Kategorie(nazwa)").execute()
     if res_p.data:
         # Spłaszczanie wyniku dla czytelności (relacja z Kategorie)
         flat_data = []
